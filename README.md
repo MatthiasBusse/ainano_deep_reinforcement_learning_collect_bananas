@@ -11,7 +11,7 @@
 
 In this project we will train a deep reinforcement learning agent that is able to navigate autonomously in a simple world and knows how to collect bananas.
 The described environment is modeled by Unity and modified by Udacity.
-We will use a DQ-Network similar to that described in the paper [Human level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+We will use a DQ-Network similar to that described in [Human level control through deep reinforcement learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 
 ![Banana World](banana_world.gif)
 

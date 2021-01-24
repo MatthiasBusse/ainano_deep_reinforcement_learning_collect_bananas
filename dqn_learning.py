@@ -19,6 +19,7 @@ def dqn_learning(env, agent, n_episodes=2000, max_t=1000, eps_start=1.0,
     # initialise the environment
     brain_name = env.brain_names[0]
     # env_info = env.reset(train_mode=True)[brain_name]
+    solved = False
     scores = []                                                 # list containing scores from each episode
     scores_window = deque(maxlen=100)                           # last 100 scores
     eps = eps_start                                             # initialize epsilon
@@ -44,7 +45,8 @@ def dqn_learning(env, agent, n_episodes=2000, max_t=1000, eps_start=1.0,
         if i_episode % 100 == 0:
             print('\rEpisode {}\tAverage Score: {:.2f}'
                 .format(i_episode, np.mean(scores_window)))
-        if np.mean(scores_window)>=200.0:
+        if (np.mean(scores_window)>=13.0) and (not solved):     # print when solved, only one time
+            solved = True
             print('\nEnvironment solved in {:d} episodes!\
                 \tAverage Score: {:.2f}'.format(i_episode-100,
                 np.mean(scores_window)))
