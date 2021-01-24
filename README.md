@@ -31,14 +31,14 @@ So before training it doesn't know how the enviroment reacts (type of reward or 
 ## Getting started and setting up the environment
 
 1. Clone or download the Udacity [DLRLND repository](https://github.com/udacity/deep-reinforcement-learning) 
-2. Please follow the instructions in the DRLND GitHub repository to set up your Python environment. These instructions can be found in README.md at the root of the repository. By following these instructions, you will install PyTorch, the ML-Agents toolkit, and a few more Python packages required to run this repository.
+2. Please follow the instructions in the DRLND GitHub repository to set up your Python environment. These instructions can be found in README.md at the root of the repository. By following these instructions, you will install PyTorch and a few more Python packages required to run this repository. You don't need to install the ML Agent's toolkit. 
 3. Download a prepared Unity environment (modified by Udacity) for your operating system: 
    - [Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
    - [Linux headless](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip)
    - [Windows](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
    - [MacOS](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
 4. Unzip the file into the p1_navigation/ folder.
-5. Download and place into the p1_navigation/ folder:
+5. Download from this repository and place into the p1_navigation/ folder:
    1. the Navigation.ipynb jupyter notebook containing all the code
    2. and checkpoint.pth of containing the trained model weights of the agent.
 6. Adjust the path to the banana environment in the notebook file.
@@ -51,9 +51,11 @@ Hints for usage with WSL2:
 1. Open the Navigation.ipynb as a jupyter notebook file
 2. Use options below running the according cells in the notebook file.
 
-| Option                               | Cell |
+| Option                               | Code cell |
 | ------------------------------------ | ---  |
-| Change hyperparameters               | 1    |
-| Train an agent                       | 2    |  
-| Save model weights                   | 3    |
-| Play an episode with a trained agent | 4    | 
+| Load the environment                 | 1-3  |
+| Change hyperparameters               | 4    |
+| Train the agent                      | 5    |  
+| Save the model weights               | 6    |
+| Let the agent play                   | 7-8  | 
+| Close the environment                | 9    |
